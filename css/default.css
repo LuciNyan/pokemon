@@ -51,7 +51,21 @@ body{
   margin-left: -12px;
 }
 
-
+/*眼睛框架*/
+.eye-wrapper {
+  width: 49px;
+  height: 49px;
+  position: absolute;
+  overflow: hidden;
+}
+.eye-wrapper.left {
+  right: 50%;
+  margin-right: 90px;
+}
+.eye-wrapper.right {
+  left: 50%;
+  margin-left: 90px;
+}
 /*
  * 眼睛
  */
@@ -79,8 +93,7 @@ body{
  * 左眼
  */
 .eye.left{
-  right: 50%;
-  margin-right: 90px;
+
 }
 .eye-highlight.left{
   right: 6px;
@@ -89,8 +102,7 @@ body{
  * 右眼
  */
 .eye.right{
-  left: 50%;
-  margin-left: 90px;
+
 }
 .eye-highlight.right{
   left: 6px;
