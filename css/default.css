@@ -53,10 +53,12 @@ body{
 
 /*眼睛框架*/
 .eye-wrapper {
-  width: 49px;
+  width: 56px;
   height: 49px;
   position: absolute;
   overflow: hidden;
+
+  transition: all .2s;
 }
 .eye-wrapper.left {
   right: 50%;
@@ -76,7 +78,10 @@ body{
   position: absolute;
   border-radius: 50%;
   border: 2px solid #000000;
+
+  transition: all .2s;
 }
+
 /*眼睛高光*/
 .eye-highlight{
   content: '';
@@ -93,7 +98,7 @@ body{
  * 左眼
  */
 .eye.left{
-
+  right: 0;
 }
 .eye-highlight.left{
   right: 6px;
@@ -102,7 +107,7 @@ body{
  * 右眼
  */
 .eye.right{
-
+  left: 0;
 }
 .eye-highlight.right{
   left: 6px;
@@ -192,7 +197,25 @@ body{
   border-radius: 50px;
 }
 
-
+/*****动画特效*****/
+.eye-wrapper.right:hover{
+  top: 5px;
+  transform: rotate(-25deg);
+  border-top: solid black 2px;
+}
+.eye-wrapper.left:hover{
+  top: 5px;
+  transform: rotate(25deg);
+  border-top: solid black 2px;
+}
+.eye-wrapper:hover .eye{
+  top: -5px;
+}
+.eye-wrapper:hover .eye-highlight{
+  top: 0;
+  width: 22px;
+  height: 22px;
+}
 
 
 
