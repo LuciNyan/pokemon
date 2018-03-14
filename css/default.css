@@ -50,6 +50,8 @@ body{
   top: 28px;
   margin-left: -12px;
 }
+
+
 /*
  * 眼睛
  */
@@ -61,10 +63,8 @@ body{
   border-radius: 50%;
   border: 2px solid #000000;
 }
-/*
- * 眼睛里面的珠子
- */
-.eye::before{
+/*眼睛高光*/
+.eye-highlight{
   content: '';
   display: block;
   width: 24px;
@@ -72,31 +72,31 @@ body{
   background: white;
   position: absolute;
   border-radius: 50%;
-  top:-1px;
+  top: -1px;
   border: 2px solid #000;
 }
 /*
- * 左眼在左边（废话）
+ * 左眼
  */
 .eye.left{
   right: 50%;
   margin-right: 90px;
 }
-.eye.left::before{
+.eye-highlight.left{
   right: 6px;
 }
 /*
- * 右眼在右边（废话）
+ * 右眼
  */
 .eye.right{
   left: 50%;
   margin-left: 90px;
 }
-.eye.right::before{
+.eye-highlight.right{
   left: 6px;
 }
 /*
- * 然后，画皮卡丘的脸
+ * 红脸颊
  */
 .face{
   width: 68px;
