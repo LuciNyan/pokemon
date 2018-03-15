@@ -145,6 +145,8 @@ body{
   position: absolute;
   top: 50px;
   background: #FDE348;
+
+  transition: all .2s;
 }
 .upperLip.left{
   right: 50%;
@@ -171,8 +173,6 @@ body{
   height: 110px;
   overflow: hidden;
   width: 300px;
-
-  transition: all 0s;
 }
 .lowerLip{
   /*默认不显示*/
@@ -187,7 +187,7 @@ body{
   bottom: 0;
   overflow: hidden;
 
-  transition: all 0s;
+  transition: all 0s ease .2s;
 }
 /*
  * 小舌头
@@ -227,8 +227,9 @@ body{
 
 /*嘴巴变化*/
 .lowerLip-wrapper:hover .lowerLip {
-
+  z-index: 0;
 }
+
 .upperLip.left:hover {
   border-bottom-left-radius: 0%;
   border-left: none;
@@ -242,5 +243,6 @@ body{
   width: 40px;
   margin-left: 1.5px;
 }
+
 
 
