@@ -171,8 +171,13 @@ body{
   height: 110px;
   overflow: hidden;
   width: 300px;
+
+  transition: all 0s;
 }
 .lowerLip{
+  /*默认不显示*/
+  z-index: -1;
+
   height: 3500px;
   width: 300px;
   background: #990513;
@@ -181,6 +186,8 @@ body{
   position: absolute;
   bottom: 0;
   overflow: hidden;
+
+  transition: all 0s;
 }
 /*
  * 小舌头
@@ -198,6 +205,7 @@ body{
 }
 
 /*****动画特效*****/
+/*眼神变化*/
 .eye-wrapper.right:hover{
   top: 5px;
   transform: rotate(-25deg);
@@ -217,5 +225,22 @@ body{
   height: 22px;
 }
 
+/*嘴巴变化*/
+.lowerLip-wrapper:hover .lowerLip {
+
+}
+.upperLip.left:hover {
+  border-bottom-left-radius: 0%;
+  border-left: none;
+  width: 40px;
+  margin-right: 1.5px;
+}
+
+.upperLip.left:hover + .upperLip.right {
+  border-bottom-right-radius: 0%;
+  border-right: none;
+  width: 40px;
+  margin-left: 1.5px;
+}
 
 
