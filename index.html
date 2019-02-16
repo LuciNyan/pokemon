@@ -2,35 +2,42 @@
 <html lang="zh-Hans">
 <head>
   <meta charset="UTF-8">
-  <title>Pokemon!GET!</title>
+  <title>Miss Nyan</title>
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <link rel="stylesheet" href="./css/default.css">
+  <style>
+    * {margin: 0; padding: 0; box-sizing: border-box;}
+
+    *::after {
+      box-sizing: border-box;
+    }
+    *::before {
+      box-sizing: border-box;
+    }
+    * {
+      transition: all 0.3s;
+    }
+    body{
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+
+    .image-container {
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+    }
+    .bg-img {
+      width: 100vw;
+    }
+  </style>
 </head>
 <body>
-  <div class="preview">
-    <div class="wrapper">
-      <div class="lowerLip-wrapper">
-        <div class="lowerLip"></div>
-      </div>
-      <div class="nose"></div>
-      <!--左眼-->
-      <div class="eye-wrapper left">
-        <div class="eye left">
-          <div class="eye-highlight left"></div>
-        </div>
-      </div>
-      <!--右眼-->
-      <div class="eye-wrapper right">
-        <div class="eye right">
-          <div class="eye-highlight right"></div>
-        </div>
-      </div>
-      <div class="face left"></div>
-      <div class="face right"></div>
-      <div class="upperLip left"></div>
-      <div class="upperLip right"></div>
-    </div>
+<div class="main-container">
+  <div class="image-container">
+    <img src="./assets/images/bg.jpg" alt="" class="bg-img">
   </div>
+</div>
 </div>
 </body>
 </html>
